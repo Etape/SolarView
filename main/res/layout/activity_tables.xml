@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tables_act">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/edge"
+            android:gravity="center"
+            android:text="Historique"
+            android:textColor="@color/white_beige"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="membre" />
+
+                <Button
+                    android:id="@+id/file"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Extraire Donnees" />
+
+                <TableLayout
+                    android:id="@+id/ambiance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="5"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp">
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#03b5fc"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="DONNEES AMBIANTES" />
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_column="1"
+                            android:padding="8dp"
+                            android:text="Date"
+                            android:textColor="@color/colorPrimaryDark" />
+                        <TextView
+                            android:layout_column="2"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Soleil"
+                            android:padding="8dp"
+                            />
+                        <TextView
+                            android:layout_column="3"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Vent"
+                            android:padding="8dp"
+                            />
+                        <TextView
+                            android:layout_column="4"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Humidite"
+                            android:padding="5dp"
+                            />
+
+                        <TextView
+                            android:layout_column="5"
+                            android:padding="8dp"
+                            android:text="T(°C)"
+                            android:textColor="@color/colorPrimary" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimaryDark"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimaryDark"
+                        />
+                </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tempers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="4">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#ffc400"
+                    android:gravity="center"
+                    android:text="DONNEES EQUIPEMENTS" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_column="1"
+                        android:padding="8dp"
+                        android:text="Date"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_column="2"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:text="T_panneau" />
+
+                    <TextView
+                        android:layout_column="3"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:text="T_onduleur" />
+
+                    <TextView
+                        android:layout_column="4"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:text="T_batterie" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark" />
+            </TableLayout>
+
+
+            <TableLayout
+                android:id="@+id/production"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:stretchColumns="5">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="DONNEES PRODUCTION" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_column="1"
+                        android:padding="8dp"
+                        android:text="Date"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_column="2"
+                        android:padding="8dp"
+                        android:text="I_batt"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_column="3"
+                        android:padding="8dp"
+                        android:text="V_batt"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_column="4"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:text="I_charge" />
+
+                    <TextView
+                        android:layout_column="5"
+                        android:padding="8dp"
+                        android:text="V_pan"
+                        android:textColor="@color/colorPrimary" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark" />
+            </TableLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

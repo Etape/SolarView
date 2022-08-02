@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FileDownload">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/edge"
+        android:gravity="center"
+        android:text="Historique"
+        android:textColor="@color/white_beige"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/Fisrt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:hint="Date de debut"
+        android:inputType="date" />
+    <EditText
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/Last"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Date de Fin"
+        android:layout_margin="10dp"
+        android:inputType="date" />
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Format des dates jj/mm/aaaa "
+        android:layout_marginBottom="50dp"
+        />
+    <Button
+        android:id="@+id/download"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_margin="20dp"
+        android:text="Telecharger"/>
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="aucune donnees trouvee !"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/openFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ouvrir le fichier"
+        android:visibility="invisible"/>
+
+
+</LinearLayout>
